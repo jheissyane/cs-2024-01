@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Bairro {
+public class Bairro {
+    private String nome;
+    private Cidade cidade;
 }

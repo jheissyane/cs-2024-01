@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Cidade {
+public class Cidade {
+    private String nome;
+    private Estado estado;
 }
