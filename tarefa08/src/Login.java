@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Login{
@@ -6,7 +7,7 @@ public class Login{
     public Scanner scanner = new Scanner(System.in);
 
     public Login(String usuarioPreenchido, String senhaPreenchida) throws LoginInvalidoException {
-        if(usuarioPreenchido != usuario || senhaPreenchida != senha){
+        if(!Objects.equals(usuarioPreenchido, usuario) || !Objects.equals(senhaPreenchida, senha)){
             throw new LoginInvalidoException();
         }
         else{
